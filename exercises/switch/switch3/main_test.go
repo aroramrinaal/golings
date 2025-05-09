@@ -1,7 +1,7 @@
 // switch3
 // Make me compile!
 
-// I AM NOT DONE
+
 package main_test
 
 import "testing"
@@ -9,7 +9,24 @@ import "testing"
 func weekDay(day int) string {
 	// Return the day of the week based on the
 	// integer. Use a switch case to satisfy all test cases below
-	return "Sunday"
+	var dayOfWeek string
+	switch day {
+	case 0:
+		dayOfWeek = "Sunday"
+	case 1:
+		dayOfWeek = "Monday"
+	case 2:
+		dayOfWeek = "Tuesday"
+	case 3:
+		dayOfWeek = "Wednesday"
+	case 4:
+		dayOfWeek = "Thursday"
+	case 5:
+		dayOfWeek = "Friday"
+	case 6:
+		dayOfWeek = "Saturday"
+	}
+	return dayOfWeek
 }
 
 func TestWeekDay(t *testing.T) {
